@@ -1,8 +1,25 @@
 <?php
 
-wp_enqueue_style('style', get_stylesheet_uri(), [], '0.0.1');
+function css()
+{
+    wp_enqueue_style('style', get_stylesheet_uri(), [], '0.0.1');
+}
+add_action('wp_enqueue_scripts', 'css');
 
-wp_enqueue_script('main', get_template_directory_uri() . '/main.js', [], false, true);
+function js()
+{
+    wp_enqueue_script('main', get_template_directory_uri() . '/main.js', [], false, true);
+}
+add_action('wp_enqueue_scripts', 'js');
+
+function browsersync()
+{
+    wp_enqueue_script('browsersync', get_template_directory_uri() . '/browsersync.js', [], false, true);
+}
+
+if ($_SERVER['HTTP_HOST'] === "wp-lmh.test") {
+    add_action('wp_enqueue_scripts', 'browsersync');
+}
 
 //* Load Lato and Merriweather Google fonts
 function bg_load_google_fonts()

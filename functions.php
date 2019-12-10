@@ -2,12 +2,15 @@
 
 wp_enqueue_style('style', get_stylesheet_uri(), [], '0.0.1');
 
+wp_enqueue_script('main', get_template_directory_uri() . '/main.js', [], false, true);
+
 //* Load Lato and Merriweather Google fonts
 function bg_load_google_fonts()
 {
     wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Lato:300,700|Merriweather:300,700|Montserrat:300,700|Alata:300');
 }
 add_action('wp_enqueue_scripts', 'bg_load_google_fonts');
+
 
 /**
  * Custom Post Types

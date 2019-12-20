@@ -28,6 +28,12 @@ function bg_load_google_fonts()
 }
 add_action('wp_enqueue_scripts', 'bg_load_google_fonts');
 
+//Enqueue the Dashicons script
+function load_dashicons_front_end()
+{
+    wp_enqueue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'load_dashicons_front_end');
 
 /**
  * Custom Post Types

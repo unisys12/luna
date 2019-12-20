@@ -9,10 +9,14 @@
         </ul>
     </div>
     <div class="links">
-        <a href="#">Link 1</a>
-        <a href="#">Link 1</a>
-        <a href="#">Link 1</a>
-        <a href="#">Link 1</a>
+        <a href="https://www.facebook.com/leadmehomerescue/">
+            <span class="dashicons-before dashicons-facebook"></span>
+            Facebook
+        </a>
+        <a href="https://www.instagram.com/amberaustin7">
+            <span class="dashicons-before dashicons-instagram"></span>
+            Instagram
+        </a>
     </div>
     <div class="donation">
         <button>Donate Buttom</button>

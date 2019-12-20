@@ -174,7 +174,19 @@ footer {
   grid-template-columns: repeat(3, 1fr);
 }
 
-footer > .links {
+footer .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+footer .links a span .dashicon {
+  font-size: x-large;
 }
 
 .contact li {

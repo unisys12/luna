@@ -12,6 +12,11 @@ function js()
 }
 add_action('wp_enqueue_scripts', 'js');
 
+/**
+ * Loads Browser Sync script in local environment
+ *
+ * @return void
+ */
 function browsersync()
 {
     wp_enqueue_script('browsersync', get_template_directory_uri() . '/browsersync.js', [], false, true);
@@ -19,6 +24,20 @@ function browsersync()
 
 if ($_SERVER['HTTP_HOST'] === "wp-lmh.test") {
     add_action('wp_enqueue_scripts', 'browsersync');
+}
+
+/**
+ * Load image switcher script only on a dogs profile page
+ * 
+ * @return void
+ */
+function load_image_switcher()
+{
+    wp_enqueue_script('image_switcher', get_template_directory_uri() . '/assests/js/imageSwitcher.js', [], false, true);
+}
+
+if (preg_match("/dogs\/*\w+/i", $_SERVER['REQUEST_URI'])) {
+    add_action('wp_enqueue_scripts', 'load_image_switcher');
 }
 
 //* Load Lato and Merriweather Google fonts

@@ -68,7 +68,7 @@
             <fieldset>
                 <legend>Puppy I'm Interest In</legend>
                 <label for="puppy_name">Puppy</label>
-                <input type="text" name="puppy_name" value="<?php echo htmlspecialchars($_GET['puppy_name']); ?>">
+                <input type="text" name="puppy_name" value="<?php echo htmlspecialchars($_GET['puppy_name'] ?? ""); ?>">
             </fieldset>
             <p>By submitting this application, I affirm that ALL information is true
                 and complete and that no one in the household where the pet will

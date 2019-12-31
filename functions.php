@@ -40,6 +40,20 @@ if (preg_match("/dogs\/*\w+/i", $_SERVER['REQUEST_URI'])) {
     add_action('wp_enqueue_scripts', 'load_image_switcher');
 }
 
+/**
+ * Load adoption form script only on the forms display page
+ * 
+ * @return void
+ */
+function load_adoption_script()
+{
+    wp_enqueue_script('image_switcher', get_template_directory_uri() . '/assests/js/adoptForm.js', [], false, true);
+}
+
+if (preg_match("/adoption-app/i", $_SERVER['REQUEST_URI'])) {
+    add_action('wp_enqueue_scripts', 'load_adoption_script');
+}
+
 //Enqueue the Dashicons script
 function load_dashicons_front_end()
 {

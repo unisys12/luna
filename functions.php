@@ -40,13 +40,6 @@ if (preg_match("/dogs\/*\w+/i", $_SERVER['REQUEST_URI'])) {
     add_action('wp_enqueue_scripts', 'load_image_switcher');
 }
 
-//* Load Lato and Merriweather Google fonts
-function bg_load_google_fonts()
-{
-    wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Lato:300,700|Merriweather:300,700|Montserrat:300,700|Alata:300');
-}
-add_action('wp_enqueue_scripts', 'bg_load_google_fonts');
-
 //Enqueue the Dashicons script
 function load_dashicons_front_end()
 {

@@ -23,17 +23,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  font-family: var(--primary-font);
 }
 
 .site-header h1 {
   line-height: 4rem;
+  font-family: var(--logo-font);
 }
 
 .site-header a {
   color: #1b1b1b;
   text-decoration: none;
-  letter-spacing: 0.2em;
+  font-family: var(--link-font);
+  font-size: 1.5em;
 }
 
 .site-nav a:hover {
@@ -62,16 +63,18 @@
 .action {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  font-family: var(--secondary-font);
-  letter-spacing: 0.085em;
+  justify-items: center;
 }
 
-.action h2 {
-  align-self: end;
+.action-header {
+  align-self: center;
+  font-family: var(--secondary-font);
+  letter-spacing: 0.085em;
+  margin-left: 1em;
 }
 
 .adoption-btn {
-  padding: 1em 0;
+  padding: 1em 2em;
   max-width: 150px;
   color: #eeeeee;
   text-align: center;
@@ -87,6 +90,7 @@
   margin-left: 2em;
   transition: opacity 0.3s ease-in-out;
   text-decoration: none;
+  font-family: var(--primary-font);
 }
 
 .adoption-btn:hover {
@@ -105,9 +109,9 @@
 }
 
 .kennel-head,
-.profile-head,
 .page-head {
   font-family: var(--secondary-font);
+  font-weight: 300;
   padding: 1.5em 0;
 }
 
@@ -132,10 +136,15 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.profile-head h2 {
+  font-family: var(--secondary-font);
+  margin: 1em 0;
+}
+
 .attributes {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 0.25em;
+  grid-gap: 2em;
   font-family: var(--secondary-font);
   letter-spacing: 0.069em;
 }
@@ -168,10 +177,10 @@
 }
 
 footer {
-  font-family: var(--primary-font);
-  letter-spacing: 0.085em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-family: var(--secondary-font);
+  letter-spacing: 0.085em;
 }
 
 footer .links {
@@ -191,6 +200,19 @@ footer .links a span .dashicon {
 
 .contact li {
   list-style-type: none;
+}
+
+.dashicons-facebook {
+  color: rgba(0, 0, 200, 1);
+  transition: color ease-in-out 0.3s;
+}
+
+.dashicons-facebook:hover {
+  color: rgba(23, 23, 175, 0.9);
+}
+
+.dashicons-instagram {
+  color: rgba(250, 138, 11, 0.945);
 }
 
 .page-content {

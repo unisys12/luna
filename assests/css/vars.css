@@ -1,4 +1,6 @@
 :root {
-  --primary-font: Montserrat, Arial, Helvetica, sans-serif;
-  --secondary-font: Alata, Arial, Helvetica, sans-serif;
+  --primary-font: "Montserrat", Arial, Helvetica, sans-serif;
+  --secondary-font: "Lato", Arial, Helvetica, sans-serif;
+  --link-font: "Agency FB Bold", Arial, Helvetica, sans-serif;
+  --logo-font: "MyriadPro-BoldCond", Arial, Helvetica, sans-serif;
 }

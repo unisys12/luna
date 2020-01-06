@@ -233,28 +233,32 @@ footer .links a span .dashicon {
   letter-spacing: 0.069em;
   margin: 0 auto;
   padding: 2em;
+  /* max-width: 50vw; */
 }
 
 .adopt-form fieldset {
   padding: 1em;
-  margin: 1em;
+  margin: 2em auto;
+  font-weight: 600;
 }
 
 .form-group {
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
 .adopt-form label {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .adopt-form input {
   display: block;
-  width: 50vw;
+  width: 45vw;
+  padding: 0.5em 0.25em;
 }
 
 .adopt-form p {
   margin-left: 1em;
+  margin-top: 1em;
 }
 
 .adopt-form input[type="submit"] {

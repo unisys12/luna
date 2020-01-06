@@ -137,9 +137,31 @@ if (isset($_POST['appSubmit'])) {
         'email' => sanitize_email($_POST['email']),
         'contact_window' => sanitize_text_field($_POST['contact_window']),
         'employment_status' => sanitize_text_field($_POST['employment_status']),
-        'occupation' => sanitize_text_field($_POST['occupation']),
-        'employeer_name' => sanitize_text_field($_POST['employeer_name']),
-        'work_schedule' => sanitize_text_field($_POST['work_schedule']),
+        'occupation' => sanitize_text_field($_POST['occupation'] ?? ""),
+        'employeer_name' => sanitize_text_field($_POST['employeer_name'] ?? ""),
+        'work_schedule' => sanitize_text_field($_POST['work_schedule'] ?? ""),
+        'own_or_rent' => $_POST['own_or_rent'],
+        'landlord_name' => sanitize_text_field($_POST['landlord_name'] ?? ""),
+        'landlord_phone' => sanitize_text_field($_POST['landlord_phone'] ?? ""),
+        'fence_desc' => sanitize_text_field($_POST['fence_desc']),
+        'number_in_household' => $_POST['number_in_household'],
+        'adult_age_list' => sanitize_text_field($_POST['adult_age_list']),
+        'child_age_list' => sanitize_text_field($_POST['child_age_list']),
+        'allergies' => sanitize_text_field($_POST['allergies']),
+        'time_alone' => sanitize_text_field($_POST['time_alone']),
+        'alone_precautions' => sanitize_text_field($_POST['alone_precautions']),
+        'sleeping_arrangments' => sanitize_text_field($_POST['sleeping_arrangments']),
+        'time_together' => sanitize_text_field($_POST['time_together']),
+        'pet_members' => sanitize_text_field($_POST['pet_members']),
+        'spayed' => sanitize_text_field($_POST['spayed']),
+        'euthanasia' => sanitize_text_field($_POST['euthanasia']),
+        'exercise' => sanitize_text_field($_POST['exercise']),
+        'obedience_classes' => $_POST['obedience_classes'],
+        'veterinarian' => $_POST['veterinarian'],
+        'vet_name' => sanitize_text_field($_POST['vet_name']),
+        'vet_number' => sanitize_text_field($_POST['vet_number']),
+        'vet_city' => sanitize_text_field($_POST['vet_city']),
+        'vet_state' => sanitize_text_field($_POST['vet_state']),
         'puppy_name' => sanitize_text_field($_POST['puppy_name'])
     ];
 
@@ -148,7 +170,6 @@ if (isset($_POST['appSubmit'])) {
     if ($result) {
         $redirect_location = "/dogs/" . sanitize_text_field($_POST['puppy_name']);
         $redirect = wp_sanitize_redirect($redirect_location);
-        echo $redirect;
         die;
         wp_redirect($redirect);
         exit;

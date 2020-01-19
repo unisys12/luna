@@ -270,3 +270,14 @@ footer .links a span .dashicon {
 .adopt-form input[type="checkbox"] {
   width: auto;
 }
+
+.donation {
+  align-self: center;
+  justify-self: center;
+}
+
+.donate-btn {
+  padding: 1em 3em;
+  border-radius: 0.5em;
+  background-color: lightblue;
+}

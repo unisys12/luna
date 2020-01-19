@@ -19,7 +19,7 @@
         </a>
     </div>
     <div class="donation">
-        <button>Donate Buttom</button>
+        <button class="donate-btn">Make a Donation</button>
     </div>
 </footer>
 <?php wp_footer(); ?>

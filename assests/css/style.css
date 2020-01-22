@@ -1,3 +1,15 @@
+/*!
+Theme Name: Luna
+Theme URI: https://github.com/unisys12/luna
+Author: Phillip Jackson
+Author URI: https://unisys12.gitlab.io
+Description: Luna is a theme writing for a local animal resuce
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: luna
+*/
+
 @import url("./resets.css");
 @import url("./fonts.css");
 @import url("./vars.css");

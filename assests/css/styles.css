@@ -5,10 +5,15 @@ body {
 .container {
   display: grid;
   margin-bottom: 1em;
+  row-gap: 1em;
+}
+
+.container p {
+  font-family: var(--content-font);
 }
 
 .about-content {
-  font-family: var(--secondary-font);
+  font-family: var(--content-font);
   letter-spacing: 0.085em;
   line-height: 1.5em;
 }
@@ -71,7 +76,7 @@ body {
 
 .action-header {
   align-self: center;
-  font-family: var(--secondary-font);
+  font-family: var(--content-font);
   letter-spacing: 0.085em;
   margin-left: 1em;
 }
@@ -113,9 +118,9 @@ body {
 
 .kennel-head,
 .page-head {
-  font-family: var(--secondary-font);
-  font-weight: 300;
-  padding: 1.5em 0;
+  font-family: var(--content-font);
+  font-weight: 700;
+  padding: 1em 0;
 }
 
 .card {
@@ -140,7 +145,7 @@ body {
 }
 
 .profile-head h2 {
-  font-family: var(--secondary-font);
+  font-family: var(--content-font);
   margin: 1em 0;
 }
 
@@ -148,7 +153,7 @@ body {
   display: grid;
   grid-template-rows: 1fr auto auto;
   grid-gap: 1em;
-  font-family: var(--secondary-font);
+  font-family: var(--content-font);
   letter-spacing: 0.069em;
   margin-bottom: 1em;
 }
@@ -183,7 +188,7 @@ body {
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  font-family: var(--secondary-font);
+  font-family: var(--content-font);
   letter-spacing: 0.085em;
 }
 
@@ -229,7 +234,7 @@ footer .links a span .dashicon {
 }
 
 .adopt-form {
-  font-family: var(--secondary-font);
+  font-family: var(--content-font);
   letter-spacing: 0.069em;
   margin: 0 auto;
   padding: 2em;

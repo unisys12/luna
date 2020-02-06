@@ -1,6 +1,5 @@
+<?php get_header(); ?>
 <div class="wrapper">
-    <?php get_header(); ?>
-
     <main class="container">
         <div class="wide-header">
             <figure class="luna-background">

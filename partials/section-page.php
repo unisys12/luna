@@ -1,4 +1,4 @@
-<main class="container">
+<main class="container" role="main content">
     <h1 class="page-head"><?php the_title(); ?></h1>
     <?php if (has_post_thumbnail()) : ?>
         <img src="<?php the_post_thumbnail_url('blog-large'); ?>" width="250px" height="300px" alt="<?php the_title(); ?>" class="">

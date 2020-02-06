@@ -1,4 +1,4 @@
-<main class="container">
+<main class="container" role="dogs profile">
     <?php while (have_posts()) : the_post(); ?>
         <div class="profile-head">
             <h2><?php the_title(); ?></h2>

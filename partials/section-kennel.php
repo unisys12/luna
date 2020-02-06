@@ -1,4 +1,4 @@
-<main class="container">
+<main class="container" role="listing of adoptable dogs">
     <h2 class="kennel-head">LMH Kennel</h2>
     <?php
     $kennel_all_query = new WP_Query(

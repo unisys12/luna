@@ -8,7 +8,7 @@
             </figure>
             <div class="action">
                 <h2 class="action-header">Rescue Your Next Pet!</h2>
-                <a href="/dogs" class="adoption-btn">For Luna...</a>
+                <a href="/dogs" role="button" aria-label="click to view adoptiable dogs" class="adoption-btn">For Luna...</a>
             </div>
         </div>
 

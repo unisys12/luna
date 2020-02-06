@@ -1,4 +1,4 @@
-<main class="container">
+<main class="container" role="adoption form">
     <h2 class="page-head">
         <?php the_title(); ?>
     </h2>

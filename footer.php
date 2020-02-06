@@ -1,4 +1,4 @@
-<footer class="container">
+<footer class="container" role="lists of contacts">
     <div class="contact">
         <ul>
             <li>

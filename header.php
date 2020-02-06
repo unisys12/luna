@@ -1,5 +1,5 @@
 <?php require_once "partials/site_head.php"; ?>
-<header class="site-header">
+<header class="site-header" role="site navigation">
     <a href="/">
         <h1>Lead Me Home Rescue</h1>
     </a>

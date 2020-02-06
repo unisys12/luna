@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(0, 30, 65, 0.1);
+  background-color: rgba(0, 0, 0, 0.041);
 }
 
 .container {
@@ -9,16 +9,6 @@ body {
 
 .container p {
   font-family: var(--content-font);
-}
-
-.about-content {
-  font-family: var(--content-font);
-  letter-spacing: 0.085em;
-  line-height: 1.5em;
-}
-
-.about-content a {
-  text-decoration: none;
 }
 
 .wrapper {
@@ -88,6 +78,7 @@ body {
   align-self: center;
   border: 0;
   border-radius: 0.5em;
+  box-shadow: 3px 3px 4px black, -1px -1px 3px #f1eeff;
   background: rgb(0, 36, 33);
   background: linear-gradient(
     270deg,

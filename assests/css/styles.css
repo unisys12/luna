@@ -83,7 +83,7 @@ body {
   align-self: center;
   border: 0;
   border-radius: 0.5em;
-  box-shadow: 3px 3px 4px black, -1px -1px 3px #f1eeff;
+  box-shadow: 2px 2px 3px #1b1b1b;
   background: rgb(0, 36, 33);
   background: linear-gradient(
     270deg,
@@ -91,13 +91,13 @@ body {
     rgba(158, 46, 56, 1) 100%
   );
   margin-left: 2em;
-  transition: opacity 0.3s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
   text-decoration: none;
   font-family: var(--primary-font);
 }
 
 .adoption-btn:hover {
-  opacity: 0.9;
+  box-shadow: none;
 }
 
 .kennel {

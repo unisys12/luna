@@ -1,5 +1,6 @@
-<?php get_header(); ?>
+<?php require_once "partials/site_head.php"; ?>
 <div class="wrapper">
+    <?php get_header(); ?>
     <main class="container">
         <div class="wide-header">
             <figure class="luna-background">

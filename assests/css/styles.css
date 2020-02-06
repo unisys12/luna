@@ -23,7 +23,7 @@ body {
 }
 
 .site-header h1 {
-  line-height: 4rem;
+  line-height: 1rem;
   font-family: var(--logo-font);
 }
 

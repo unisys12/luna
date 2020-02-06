@@ -1,5 +1,3 @@
-<?php wp_head(); ?>
-
 <div class="wrapper">
     <?php get_header(); ?>
 

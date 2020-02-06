@@ -5,7 +5,6 @@ body {
 .container {
   display: grid;
   margin-bottom: 1em;
-  row-gap: 1em;
 }
 
 .container p {
@@ -120,7 +119,6 @@ body {
 .page-head {
   font-family: var(--content-font);
   font-weight: 700;
-  padding: 1em 0;
 }
 
 .card {

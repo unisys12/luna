@@ -14,3 +14,4 @@ Text Domain: luna
 @import url("./fonts.css");
 @import url("./vars.css");
 @import url("./styles.css");
+@import url("./media_queries.css");

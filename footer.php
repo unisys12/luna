@@ -18,8 +18,10 @@
             Instagram
         </a>
     </div>
-    <div class="donation">
-        <button class="donate-btn">Make a Donation</button>
-    </div>
+    <figure class="doobert_img">
+        <a href="https://www.doobert.com/app/organization-3781-lead-me-home-animal-rescue-&-transport">
+            <img src="https://res.cloudinary.com/dtm8qhbwk/image/upload/v1581420311/3781-Lead-Me-Home-Animal-Rescue-Transport-New-Org-Badge-2020_xdb6ez.png" alt="doobert org logo" height="215px" width="256px">
+        </a>
+    </figure>
 </footer>
 <?php wp_footer(); ?>

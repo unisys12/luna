@@ -182,15 +182,15 @@ body {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
   font-family: var(--content-font);
   letter-spacing: 0.085em;
+  place-items: center;
 }
 
 footer .links {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-content: center;
 }
 
 footer .links a {
@@ -217,6 +217,12 @@ footer .links a span .dashicon {
 
 .dashicons-instagram {
   color: rgba(250, 138, 11, 0.945);
+}
+
+.doobert_img {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .page-content {

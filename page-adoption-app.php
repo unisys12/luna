@@ -1,4 +1,4 @@
-<?php wp_head(); ?>
+<?php require_once "partials/site_head.php"; ?>
 <div class="wrapper">
     <?php get_header(); ?>
 

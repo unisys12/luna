@@ -1,6 +1,6 @@
 {
   "name": "luna",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Frontend asset management for Wordpress theme LUNA",
   "main": "index.js",
   "scripts": {

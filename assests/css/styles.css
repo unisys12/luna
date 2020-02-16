@@ -287,3 +287,15 @@ footer .links a span .dashicon {
   border-radius: 0.5em;
   background-color: lightblue;
 }
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  place-items: center;
+}
+
+.payment-card {
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  font-family: var(--primary-font);
+}

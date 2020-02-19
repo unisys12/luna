@@ -5,7 +5,7 @@
         </div>
         <div class="profile-card">
             <?php if (has_post_thumbnail()) : ?>
-                <img src="<?php the_post_thumbnail_url('blog-large'); ?>" width="500px" height="600px" alt="<?php the_title(); ?>" class="profile-img">
+                <img src="<?php the_post_thumbnail_url('blog-large'); ?>" loading="lazy" width="500px" height="600px" alt="<?php the_title(); ?>" class="profile-img">
             <?php endif; ?>
             <div class="attributes">
                 <?php the_content(); ?>

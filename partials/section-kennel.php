@@ -14,7 +14,16 @@
                 <div class="card">
                     <a href='<?php echo "/dogs/" . $post->post_title ?>'>
                         <div class="card-content">
-                            <?php the_post_thumbnail('medium'); ?>
+                            <figure>
+                                <?php the_post_thumbnail(
+                                    'medium',
+                                    [
+                                        'loading' => 'lazy',
+                                        'alt' => 'thumbnail of ' . $post->post_title,
+                                    ]
+                                );
+                                ?>
+                            </figure>
                             <div class="attributes">
                                 <h3><?php echo $post->post_title; ?></h3>
                                 <span class="age">

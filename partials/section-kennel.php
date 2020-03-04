@@ -16,7 +16,7 @@
                         <div class="card-content">
                             <figure>
                                 <?php the_post_thumbnail(
-                                    'medium',
+                                    'thumbnail',
                                     [
                                         'loading' => 'lazy',
                                         'alt' => 'thumbnail of ' . $post->post_title,

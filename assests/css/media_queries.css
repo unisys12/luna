@@ -70,12 +70,6 @@
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
-  .site-header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
   a h1 {
     font-size: 1.5em;
   }
@@ -117,6 +111,11 @@
 
   .kennel {
     grid-template-columns: 1fr;
+  }
+
+  .support-grid {
+    display: flex;
+    flex-direction: column;
   }
 
   main.container {
@@ -202,6 +201,20 @@
   .profile-img {
     place-self: center;
   }
+
+  .support-grid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    row-gap: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .support-grid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    row-gap: 1em;
+  }
 }
 
 @media screen and (max-width: 667px) {
@@ -254,6 +267,21 @@
     font-size: 1.25em;
   }
 
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 2em;
+    gap: 1em;
+  }
+
   .wide-header {
     background: linear-gradient(
       270deg,
@@ -261,5 +289,11 @@
       rgba(73, 167, 221, 1) 45%,
       rgba(38, 102, 115, 1) 100%
     );
+  }
+
+  .support-grid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    row-gap: 1em;
   }
 }
